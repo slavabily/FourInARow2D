@@ -150,7 +150,7 @@ class ViewController: UIViewController {
         
         if let stack = button.superview {
             
-            let size = min(stack.frame.width, stack.frame.height)
+//            let size = min(stack.frame.width, stack.frame.height)
             
             let tag = button.tag
             
