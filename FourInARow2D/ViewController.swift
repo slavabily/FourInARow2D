@@ -156,16 +156,29 @@ class ViewController: UIViewController {
             
             switch tag {
             case 0...3:
-                return CGPoint(x: button.center.x, y: button.center.y)
+                return CGPoint(x: stack.center.x, y: button.center.y)
             case 4...7:
-                return CGPoint(x: button.center.x + size + 2, y: button.center.y)
+                return CGPoint(x: stack.center.x, y: button.center.y)
             case 8...11:
-                return CGPoint(x: button.center.x + (size + 2) * 2, y: button.center.y)
+                return CGPoint(x: stack.center.x, y: button.center.y)
             case 12...15:
-                return CGPoint(x: button.center.x + (size + 2) * 3, y: button.center.y)
+                return CGPoint(x: stack.center.x, y: button.center.y)
             default:
                 break
             }
+            
+//            switch tag {
+//            case 0...3:
+//                return CGPoint(x: button.center.x, y: button.center.y)
+//            case 4...7:
+//                return CGPoint(x: button.center.x + size + 2, y: button.center.y)
+//            case 8...11:
+//                return CGPoint(x: button.center.x + (size + 2) * 2, y: button.center.y)
+//            case 12...15:
+//                return CGPoint(x: button.center.x + (size + 2) * 3, y: button.center.y)
+//            default:
+//                break
+//            }
         }
         return nil
     }
