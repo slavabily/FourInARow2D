@@ -141,7 +141,6 @@ class ViewController: UIViewController {
         UIView.animate(withDuration: 0.5, delay: 0, options: .curveEaseIn, animations: {
             newChip.transform = CGAffineTransform.identity
         })
-        
         placedChips.append(newChip)
     }
     
@@ -149,8 +148,6 @@ class ViewController: UIViewController {
         let button = buttons[slot]
         
         if let stack = button.superview {
-            
-//            let size = min(stack.frame.width, stack.frame.height)
             
             let tag = button.tag
             
@@ -166,19 +163,6 @@ class ViewController: UIViewController {
             default:
                 break
             }
-            
-//            switch tag {
-//            case 0...3:
-//                return CGPoint(x: button.center.x, y: button.center.y)
-//            case 4...7:
-//                return CGPoint(x: button.center.x + size + 2, y: button.center.y)
-//            case 8...11:
-//                return CGPoint(x: button.center.x + (size + 2) * 2, y: button.center.y)
-//            case 12...15:
-//                return CGPoint(x: button.center.x + (size + 2) * 3, y: button.center.y)
-//            default:
-//                break
-//            }
         }
         return nil
     }
